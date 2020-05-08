@@ -28,17 +28,3 @@ title: Maitri's Art Gallery
             
 </div>
         <!-- /PORTFOLIO -->
-
-<style>
- .inline { display: none }
-.caption { position: relative; bottom: 20px; height: 0; color: white }
-</style>
-<script>
- $.featherlightGallery.prototype.afterContent = function() {
-  debugger
-  var caption = this.$currentTarget.find('img').attr('alt');
-  this.$instance.find('.caption').remove();
-  $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
-};
-</script>
-    
