@@ -16,5 +16,6 @@ jQuery(document).ready(function($) {
 		galleryFadeIn: 100,
 		galleryFadeOut: 300    
 	});
-    
+	
+    $('.portfolio a').detectSwipe.enabled;
 });
