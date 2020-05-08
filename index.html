@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Maitri's Art Gallery
-nav: index
 ---
+ {% include navigation_index.html %}
 <!-- HERO -->
         <div class="hero">
             <!-- FRONT CONTENT -->
             <div class="front-content">
                 <img src="{{site.logo}}" class="img-responsive logo" alt="logo">
-                <h1>Hola! I’m <span>Maitri Patel</span>.<br>This is my art gallery.</h1>
+                <h1>{{site.greeting}} I’m <span>{{site.author}}</span>.<br>{{site.heading}}</h1>
             </div>
             <!-- /FRONT CONTENT -->
        </div>
@@ -24,13 +24,6 @@ nav: index
                         <div class="item-cover" style="background-image: url({{art.path}})"></div>                
                     </a>
                 {% endfor %}
-
-            <!-- ITEM -->
-<!--             <a class="item" href="assets/img/portfolio/item-1.jpg">
-                <i class="fa fa-eye" aria-hidden="true"></i>
-                <div class="item-cover" style="background-image: url(assets/img/portfolio/item-1.jpg)"></div>                
-            </a> -->
-            <!-- /ITEM -->            
             
         </div>
         <!-- /PORTFOLIO -->
