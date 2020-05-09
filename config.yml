@@ -1,0 +1,74 @@
+# name of the website
+name: "Maitri's Art Gallery"
+# greetings on the gome page
+greeting: "Hi!"
+# author of the website
+author: "Maitri Patel"
+# heading on the home and about page
+heading: "This is my Art Gallery"
+# icon for browser
+favicon: "assets/img/favicon.ico"
+# logo for home and about page
+logo: "assets/img/logo.png"
+# author's personal pic for about page
+pic: "assets/img/me.jpg"
+# author's email
+email: "maitri@email.com"
+# author's socials
+twitter:
+facebook:
+instagram:
+youtube:
+whatsapp:
+# description of this website for about page and google search
+description: "the digital collection of my arts"
+# site settings
+defaults:
+  - scope:
+      path: "arts/"
+    values:
+      image: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-books
+
+# list of arts
+arts:
+  art1:
+    image: "arts/Krishna_et_Radha_dans_un_pavillon.jpg"
+    title: "Radha and Krishna"
+    caption: "The Eternal Love Of Radha And Krishna!"
+  art2:
+    image: "arts/A_woman_holding_a_Veena%2C_Mughal%2C_India._18_century.jpg"
+    title: ""
+    caption: ""
+  art3:
+    image: "arts/Nymph_of_Sanchi%2C_Eastern_Gateway.jpg"
+#   art4:
+#     image: "arts/1561-Akbar_riding_the_elephant_Hawa'I_pursuing_another_elephant_across_a_collapsing_bridge_of_boats_(right).jpg"
+#   art5:
+#     image: "arts/A_woman_holding_a_Veena%2C_Mughal%2C_India._18_century.jpg"
+  art6:
+    image: "arts/Ajanta_Padmapani.jpg"
+  art7:
+    image: "arts/Indischer_Maler_um_1650_(I)_001.jpg"
+  art8:
+    image: "arts/Indischer_Maler_um_1710_001.jpg"
+  art9:
+    image: "arts/Karla_caves_Chaitya.jpg"
+  art10:
+    image: "arts/Mudgarpani_Yaksha%2C_Mathura%2C_100_BCE.jpg"
+  art11:
+    image: "arts/Ravi_Varma-Shakuntala_columbia.jpg"
+  art12:
+    image: "arts/Rock_painting%2C_Bhimbetka%2C_Raisen_district%2C_MP.jpg"
+  art13:
+    image: "arts/Sarnath_capital.jpg"
+  art14:
+    image: "arts/Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg"
+	2020-05-09:
+		image:MySig.jpg
+		title:
+		caption:
