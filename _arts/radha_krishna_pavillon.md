@@ -1,6 +1,7 @@
 ---
 layout: caption
-title: radha krishna pavillon
+title: radha_krishna_pavillon
+image: arts/radha_krishna_pavillon
 permalink: captions/radha_krishna_pavillon
 ---
 # The Eternal Love of Radha and Krishna
