@@ -23,9 +23,9 @@ title: india's Art Gallery
         {% endfor %} -->
          
          {% for art in site.arts %}
-          <a alt="{{art}}" class="item" href="{{site.baseurl}}/{{site.scope}}/{{art.path}}">
-             <div alt="{{art}}" class="item-cover" style="background-image: url({{site.baseurl}}/{{site.scope}}/{{art.path}})"></div>   
-             <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{site.baseurl}}/{{site.scope}}/caption/{{art.path}}'; return false;"></i>
+          <a alt="{{art}}" class="item" href="{{site.baseurl}}/{{site.scope}}/{{file.path}}">
+             <div alt="{{file.basename}}" class="item-cover" style="background-image: url({{site.baseurl}}/{{site.scope}}/{{file.path}})"></div>   
+             <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{site.baseurl}}/{{site.scope}}/caption/{{file.path}}'; return false;"></i>
           </a>
          {% endfor %}
         </div>
