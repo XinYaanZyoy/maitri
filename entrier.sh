@@ -11,15 +11,18 @@ if [ -d "$DIR" ]; then
        echo "_${line}"
        if [ -f "${line}" ]; then
            if [ -f "_${line}" ]; then
-               echo "IMPOSSIBLE!1";
+               echo "IMPOSSIBLE! it can't exist at both the places!";
            else
                echo "it was created!";
+               echo "creating '_${line}'";
+               echo "---$'\n'layout: caption$'\n'title: ${${line}%.*}$'\n'image: ${line}$'\n'permalink: 'captions/'${${line}%.*}---$'\n'" > "_${line}";
            fi
        else
            if [ -f "_${line}" ]; then
                echo "it was deleted!";
+               rm -f "_${line}";
            else
-               echo "IMPOSSIBLE!2";
+               echo "IMPOSSIBLE! it can't exist nowhere! it has to exist somewhere!";
            fi
        fi
     (( count++ ))
