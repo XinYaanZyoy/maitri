@@ -7,11 +7,6 @@ on:
 jobs:
   build:
     steps:
-#     - uses: actions/checkout@v1
-    - uses: lots0logs/gh-action-get-changed-files@2.0.6
+      - uses: lots0logs/gh-action-get-changed-files@2.0.6
         with:
           token: ${{secrets.GH_PAT}}
-#     - name: making a diary entry
-#       env: 
-#         GH_PAT: ${{secrets.GH_PAT}}
-#       run: bash scripts/entrier.sh
