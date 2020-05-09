@@ -27,7 +27,7 @@ if [ -d "$DIR" ]; then
             echo $'\n'"git status: $(git status)"$'\n';
             git config --global user.name XinYaanZyoy && git config --global user.email XinYaanZyoy@gmail.com
             git add . && git commit -m "entry: $(date)"
-            git push "https://XinYaanZyoy:$GH_PAT@github.com/XinYaanZyoy/XinYaanZyoy.github.io.git" HEAD:master
+            git push "https://XinYaanZyoy:$GH_PAT@github.com/XinYaanZyoy/Maitri_Art_Gallery.git" HEAD:master
         fi
     else
         echo "$DIR is Empty; Skipping Transformation!";
