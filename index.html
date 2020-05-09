@@ -22,11 +22,15 @@ title: india's Art Gallery
                 </a>
         {% endfor %} -->
          
-         {% for art in site.arts %}
+<!--          {% for art in site.arts %}
           <a alt="{{art}}" class="item" href="{{site.baseurl}}/{{site.scope}}/{{file.path}}">
              <div alt="{{file.basename}}" class="item-cover" style="background-image: url({{site.baseurl}}/{{site.scope}}/{{file.path}})"></div>   
              <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{site.baseurl}}/{{site.scope}}/caption/{{file.path}}'; return false;"></i>
           </a>
-         {% endfor %}
+         {% endfor %} -->
+                
+                {% for caption in site.captions %}
+                <a href="{{site.baseurl}}/{{site.scope}}/{{caption.permalink}}">{{caption.title}}</a>
+                {% endfor %}
         </div>
         <!-- /PORTFOLIO -->
