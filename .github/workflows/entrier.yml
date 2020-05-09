@@ -7,6 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest   
-      steps:
+      - steps:
           id: file_changes
           uses: trilom/file-changes-action@v1.2.3
