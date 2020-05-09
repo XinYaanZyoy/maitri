@@ -9,7 +9,7 @@ if [ -d "$DIR" ]; then
     while read -r line; do
        printf '%d %s\n' "$i" "${line}"
        echo "_${line%.*}.md"
-       if [ '$i' -ne 0 ]; then
+       if [ $i -ne 0 ]; then
            if [ -f "_${line%.*}.md" ]; then
                if [ -f "_${line%.*}.md" ]; then
                    echo "IMPOSSIBLE! it can't exist at both the places!";
