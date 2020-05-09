@@ -30,6 +30,11 @@ if [ -d "$DIR" ]; then
        fi
        (( i++ ))
     done < changes
+    echo $'\n'"git status: $(git status)"$'\n';
+    git config --global user.name XinYaanZyoy && git config --global user.email XinYaanZyoy@gmail.com
+    git add . && git commit -m "Art Entry: $(date)"
+    echo $'\n'"git status: $(git status)"$'\n';
+    git push "https://XinYaanZyoy:$GH_PAT@github.com/XinYaanZyoy/Art_Gallery.git" HEAD:master
 else
     echo "$DIR doesn't exist!";
 fi
