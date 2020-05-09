@@ -23,7 +23,7 @@ title: Maitri's Art Gallery
                 </a>
         {% endfor %} -->
          
-         {% for art in arts %}
+         {% for art in site.arts %}
           <a alt="{{art}}" class="item" href="{{art.path}}">
              <div alt="{{art}}" class="item-cover" style="background-image: url({{art.path}})"></div>   
              <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='caption/{{art.path}}'; return false;"></i>
