@@ -1,4 +1,4 @@
-# Maitri's Art Gallery
+# India's Art Gallery
 -------
 ## Usage
 1. upload an art in arts directory
