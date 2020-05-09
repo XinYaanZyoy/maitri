@@ -19,8 +19,27 @@ title: Maitri's Art Gallery
             
         {% for art in site.arts %}
                 <a alt="{{art[1].title}}" class="item" href="{{art[1].image}}">
-                    <div alt="{{art[1].title}}" class="item-cover" style="background-image: url({{art[1].image}})"></div>                 
-                       <i onclick=caption(art[1].title,art[1].caption); class="fa fa-quote-left"></i>
+                    <div alt="{{art[1].title}}" class="item-cover" style="background-image: url({{art[1].image}})"></div>   
+                       
+                       <div class="span4 proj-div" data-toggle="modal" data-target="#GSCCModal">
+                         <i onclick=caption(art[1].title,art[1].caption); class="fa fa-quote-left"></i>
+                       </div>
+                       <div id="GSCCModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="{{art[1].title}}" aria-hidden="true">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                             <div class="modal-header">
+                               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;  </button>
+                               <h4 class="modal-title" id="{{art[1].title}}">{{art[1].title}}</h4>
+                             </div>
+                             <div class="modal-body">
+                               {{art[1].caption}}
+                             </div>
+                             <div class="modal-footer">
+                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
                 </a>
         {% endfor %}
             
