@@ -19,8 +19,41 @@ title: Maitri's Art Gallery
         {% for art in site.arts %}
                 <a alt="{{art[1].title}}" class="item" href="{{art[1].image}}">
                     <div alt="{{art[1].title}}" class="item-cover" style="background-image: url({{art[1].image}})"></div>   
-                         <i class="fa fa-quote-left btn" data-type="modal-trigger" aria-hidden="true" onclick="return false;">Fire</i>
+                         <i class="fa fa-quote-left open" data-type="modal-trigger" aria-hidden="true" onclick="return false;"></i>
                 </a>
+                <div class="popup-overlay">
+                   <div class="popup-content">
+                    <h2>{{ art[1].title }}</h2>
+                    <p> {{ art[1].caption }} </p>
+                    <button class="close">Close</button>    
+                   </div>
+                </div>
         {% endfor %}
         </div>
         <!-- /PORTFOLIO -->
+<style>
+ .popup-overlay {
+visibility:hidden;
+}
+
+.popup-content {
+visibility:hidden;
+}
+ 
+ .popup-overlay.active{
+visibility:visible;
+}
+
+.popup-content.active {
+visibility:visible;
+}
+</style>
+<script>
+ $(".open").on("click", function(){
+$(".popup, .popup-content").addClass("active");
+});
+ 
+ $(".close, .popup").on("click", function(){
+$(".popup, .popup-content").removeClass("active");
+});
+</script>
