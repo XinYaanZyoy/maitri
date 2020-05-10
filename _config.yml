@@ -6,6 +6,8 @@ baseurl: https://XinYaanZyoy.github.io
 scope: Art_Gallery
 # color of the theme on android phones
 theme_color: "#d80247"
+# background color of caption page
+caption_bg_color: "#FF6666"
 # greetings on the gome page
 greeting: "Hi!"
 # author of the website
