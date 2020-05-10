@@ -1,25 +1,42 @@
+# site settings
+# ______________________________
 # name of the website
 name: "Alia's Art Gallery"
 # github pages url
 baseurl: https://XinYaanZyoy.github.io
 # repository name
 scope: Art_Gallery
+
+# theme settings
+# _______________________________
+# use this google tool for finding hexcode for your fav color https://www.google.com/search?q=color+picker
 # color of the theme on android phones
-theme_color: "#d80247"
+theme_color: "#080e78"
 # background color of caption page
-caption_bg_color: "#FF6666"
+caption_bg_color: "#1a728f"
+
+# metadata settings
+# _________________________________
 # greetings on the gome page
 greeting: "Hi!"
 # author of the website
 author: "Alia Bhatt"
 # heading on the home and about page
 heading: "This is my Art Gallery"
+# description of this website for about page and google search
+description: "the digital collection of my arts"
+
+# graphics settings
+# _____________________________________
 # icon for browser
 favicon: "assets/img/favicon.ico"
 # logo for home and about page
 logo: "assets/img/logo.png"
 # author's personal pic for about page
 pic: "assets/img/me.jpg"
+
+# Author's details
+# ________________________________________________
 # author's email
 email: "AliaBhatt@email.com"
 # author's socials
@@ -33,8 +50,9 @@ linkedin:
 github:
 spotify:
 messenger:
-# description of this website for about page and google search
-description: "the digital collection of my arts"
+
+# jekyll Settings
+# _________________________________
 collections:
   arts:
     output: true
