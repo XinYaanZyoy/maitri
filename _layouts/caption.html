@@ -168,8 +168,8 @@
         <script>
       let shareData = {
         title: "{{site.name}}",
-        text: "{{site.name}}",
-        url: "{{site.baseurl}}/{{site.scope}}",
+        text: `An Art "${document.URL.split('/').pop()}" by {{site.author}} On {{site.name}}`,
+        url: `{{site.baseurl}}/{{site.scope}}#${document.URL.split('/').pop()}`,
       }
 
       const btn = document.querySelector('button');
