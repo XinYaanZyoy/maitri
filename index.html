@@ -17,7 +17,7 @@ title: Home
         <div class="portfolio">    
 
          {% for art in site.arts %}
-          <a alt="{{art.title}}" class="item" href="{{site.baseurl}}/{{site.scope}}/{{art.image}}">
+          <a alt="{{art.title}}" id="{{art.title}}" class="item" href="{{site.baseurl}}/{{site.scope}}/{{art.image}}">
              <div alt="{{art.title}}" class="item-cover" style="background-image: url({{site.baseurl}}/{{site.scope}}/{{art.image}})"></div>   
              <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{site.baseurl}}/{{site.scope}}/{{art.permalink}}'; return false;"></i>
           </a>
