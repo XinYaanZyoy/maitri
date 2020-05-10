@@ -14,6 +14,8 @@
         <link rel="shortcut icon" href="{{site.baseurl}}/{{site.scope}}/{{site.favicon}}" type="image/x-icon">
         <link rel="icon" href="{{site.baseurl}}/{{site.scope}}/{{site.favicon}}" type="image/x-icon">
         
+        {% feed_meta %}
+        
          <!-- Web Application Manifest -->
         <!-- Add to homescreen for Chrome on Android -->
         <meta name="mobile-web-app-capable" content="yes">
@@ -29,6 +31,8 @@
         <!-- Tile icon for Win8 -->
         <meta name="msapplication-TileColor" content="{{site.theme_color}}">
         <meta name="msapplication-navbutton-color" content="{{site.theme_color}}">
+        
+        {% seo %}
         
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Bellefair&amp;subset=latin-ext" rel="stylesheet">
