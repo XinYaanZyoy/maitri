@@ -129,10 +129,9 @@
 </div>
 <!-- /NAVIGATION BUTTON -->
         
-    <p><button>Share MDN!</button></p>
-    <p class="result"></p>
 
-        <!--         <button align="center" style="font-size:24px">Share Art <i class="fa fa-share-alt"></i></button> -->
+    <button align="center" style="font-size:32px"><i class="fa fa-share-alt"></i></button>
+    <p class="result"></p>
     
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -148,9 +147,9 @@
         <script type="text/javascript" src="{{site.baseurl}}/{{site.scope}}/assets/js/main.js"></script>
          <script>
       let shareData = {
-        title: 'MDN',
-        text: 'Learn web development on MDN!',
-        url: 'https://developer.mozilla.org',
+        title: '{{site.name}}',
+        text: 'An Art '+'"'+document.URL.split('/').pop()+'"'+' by '+'{{site.author}}'+' On '+'{{site.name}}',
+        url: '{{site.baseurl}}/{{site.scope}}'+'#'+document.URL.split('/').pop(),
       }
 
       const btn = document.querySelector('button');
@@ -159,10 +158,10 @@
       btn.addEventListener('click', () => {
         navigator.share(shareData)
           .then(() =>
-            resultPara.textContent = 'MDN shared successfully'
+            resultPara.textContent = 'Thanks for sharing!😊';
           )
           .catch((e) =>
-            resultPara.textContent = 'Error: ' + e
+            console.log('Error: ' + e);
           )
       });
     </script>
