@@ -16,7 +16,7 @@ if [ -d "$DIR" ]; then
                else
                    echo "it was created!";
                    echo "creating "_${line%.*}.md"";
-                   fname="${line}/${1##*/}";
+                   fname="$(basename $line)";
                    echo "---"$'\n'"layout: caption"$'\n'"title: ${fname%.*}"$'\n'"image: ${line}"$'\n'"permalink: captions/${fname%.*}"$'\n'"---"$'\n''# '"Heading"$'\n'"Caption" > "_${line%.*}.md"
                fi
            else
