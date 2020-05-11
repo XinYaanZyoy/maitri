@@ -16,13 +16,11 @@ youtubeId: 60P7717-XOQ
        </div>
         <!-- /HERO -->
 
-          <a class="item">
-              <div class='embed-container item-cover'>
-                      <iframe src='https://www.youtube.com/embed/{{page.youtubeId}}' frameborder='0' allowfullscreen>
-                      </iframe>
-              </div>
-              <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{site.baseurl}}/{{site.scope}}'; return false;"></i>
-          </a>
+      <i class="fa fa-quote-left" aria-hidden="true" onclick="location.href='{{site.baseurl}}/{{site.scope}}'; return false;"></i>
+      <div class='embed-container'>
+              <iframe src='https://www.youtube.com/embed/{{page.youtubeId}}' frameborder='0' allowfullscreen>
+              </iframe>
+      </div>
 
 <!-- {% for video in site.video_arts %}
 {% endfor %}
