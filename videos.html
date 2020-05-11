@@ -1,19 +1,13 @@
 ---
 layout: default
 title: Home
-youtubeId: 60P7717-XOQ
 ---
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 
-
-      <i class="fa fa-quote-left" aria-hidden="true" style="color: {{site.theme_color}}; font-size: 4rem; cursor: pointer;" onclick="location.href='{{site.baseurl}}/{{site.scope}}/caption/{{page.youtubeId}}'; return false;">Caption</i>
+{% for video in site.video_arts %}
+<!--       <i class="fa fa-quote-left" aria-hidden="true" style="color: {{site.theme_color}}; font-size: 4rem; cursor: pointer;" onclick="location.href='{{site.baseurl}}/{{site.scope}}/caption/{{page.youtubeId}}'; return false;">Caption</i> -->
       <div class='embed-container'>
-              <iframe src='https://www.youtube.com/embed/{{page.youtubeId}}' frameborder='0' allowfullscreen>
+              <iframe src='https://www.youtube.com/embed/{{video}}' frameborder='0' allowfullscreen>
               </iframe>
       </div>
-
-<!-- {% for video in site.video_arts %}
 {% endfor %}
- -->
-
-
